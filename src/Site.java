@@ -1,7 +1,11 @@
 public class Site {
     protected static final double TAX_RATE = 0.13;
+    private double BaseAmount;
+    private double TaxAmount;
 
-    public Site() {
+    public Site(double BaseAmount, double TaxAmount) {
+        this.BaseAmount = BaseAmount;
+        this.TaxAmount = TaxAmount;
 
     }
 
