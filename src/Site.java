@@ -9,6 +9,10 @@ public class Site {
 
     }
 
+    public double getBillableAmount(){
+        return getBaseAmount() + getTaxAmount();
+    }
+
     public double getBaseAmount() {
         return baseAmount;
     }
@@ -16,6 +20,7 @@ public class Site {
     public double getTaxAmount() {
         return taxAmount;
     }
+
 
     public static void main(String[] args) {
         LifelineSite ls = new LifelineSite();
