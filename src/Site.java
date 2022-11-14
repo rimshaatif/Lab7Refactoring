@@ -1,14 +1,21 @@
 public class Site {
     protected static final double TAX_RATE = 0.13;
-    private double BaseAmount;
-    private double TaxAmount;
+    private double baseAmount;
+    private double taxAmount;
 
     public Site(double BaseAmount, double TaxAmount) {
-        this.BaseAmount = BaseAmount;
-        this.TaxAmount = TaxAmount;
+        this.baseAmount = BaseAmount;
+        this.taxAmount = TaxAmount;
 
     }
 
+    public double getBaseAmount() {
+        return baseAmount;
+    }
+
+    public double getTaxAmount() {
+        return taxAmount;
+    }
 
     public static void main(String[] args) {
         LifelineSite ls = new LifelineSite();
